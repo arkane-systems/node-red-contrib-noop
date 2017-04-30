@@ -1,9 +1,8 @@
-# node-red-contrib-noop
+# Node-RED-contrib-noop
 
-A Node-RED node that does nothing whatsoever. More specifically:
+A node that does nothing (passes through all messages unchanged.
 
-* It copies its input to its output unchanged.
-* If there is no output, it discards its input silently.
-* If there is no input... well, it does nothing.
+The intended use of this node is to provide a clean way of handling many-to-many links (i.e., each of many outputs to each of many inputs) without having to keep track of an entire messy grid of connections.
 
-Apart from obscure placeholder purposes, its single function is in simplifying many-to-many connections by providing a central node to route through, rather than needing a complex mesh of connections that would be easy to lose errors in.
+It has no prerequisites other than Node-RED itself.
+
